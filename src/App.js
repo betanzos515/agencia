@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { agenciaContext } from "./context/agenciaContext";
+import { Agencia } from "./components/Agencia";
 
 function App() {
+  const initialState = {
+    marca:'Chevrolet  ',
+    modelo:'Silverado',
+    agencia:'Boons puebla'
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <agenciaContext.Provider
+      value={initialState}
+    >
+      <div className="App">
+        <h1 className='titulo'>Usando Contextos</h1>
+        <Agencia/>
+      </div>
+    </agenciaContext.Provider>
   );
 }
 

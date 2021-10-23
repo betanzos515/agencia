@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f1f1f1;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+  width: 100%;
+}
+.App{
+  padding: 2rem;
+}
+
+.titulo{
+  text-align: center;
+  color: rgb(4, 133, 253);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.secundario{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: grey
+}
+
+.container-camioneta{
+  padding: 2rem;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.camioneta-detalles{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.camioneta-detalles img{
+  width: 20%;
+  margin-right: 1rem;
+}
+
+.camioneta-detalles .info-camioneta{
+  flex-basis: calc(80%);
+  text-align: left;
+  padding: 0 1rem;
 }
