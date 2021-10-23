@@ -5,7 +5,7 @@ export const Agencia = () => {
     return (
         <div>
             <h1 className='titulo secundario'>Agencia de venta de Autos</h1>
-            <Camioneta />
+            <Camioneta marca='Chevrolet' modelo='Silverado' agencia='Bonns Puebla' />
         </div>
     )
 }

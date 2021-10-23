@@ -1,10 +1,8 @@
 
-import useAgencia from '../hooks/useAgencia';
 import img from '../img/truck.svg';
-export const Camioneta = () => {
-    const data = useAgencia();
-    const { marca, modelo, agencia } = data;
-
+export const Camioneta = (props) => {
+    const { marca, modelo, agencia } = props;
+    
     if(marca === '' || modelo === '' || agencia === ''){
         return <h1>Esperando todos los datos ...</h1>
     }
